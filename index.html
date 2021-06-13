@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <title>S021</title>
+    <link rel="stylesheet" href="sanitize.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <script type="markdown" id="source">
+    </script>
+
+    <div id='game' />
+    <script src='ficdown.min.js'></script>
+    <script>
+      var player = new Ficdown({
+        id: 'game',
+        source: document.getElementById('source').text,
+        html: true,
+        scroll: true
+      });
+      player.play();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+
+/* Custom styles */
+
+:root {
+  --bg-color: #D5E1C1;
+  --title-color: #F5B00C;
+  --heading-color: #536960;
+  --link-color: #9E0404;
+  --text-color: #05342D;
+}
+
+html {
+  background-color: var(--bg-color);
+}
+
+.ficdown {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 50em;
+  position: relative;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.ficdown a {
+  color: var(--link-color);
+}
+
+.ficdown a.disabled {
+  filter: brightness(120%);
+}
+.ficdown a.disabled.chosen {
+  filter: brightness(150%);
+}
+.ficdown a.disabled:hover {
+  cursor: not-allowed;
+}
+
+.ficdown h1 {
+  color: var(--title-color);
+  font-size: 275px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  line-height: 1;
+  text-align: center;
+}
+
+.ficdown h2 {
+  color: var(--heading-color);
+  text-align: center;
+}
+
+.ficdown p {
+  color: var(--text-color);
+  margin: 0 0 24px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.ficdown ul {
+  list-style-type: none;
+}
+
+.ficdown ul > li:before {
+  content: "–";
+  position: absolute;
+  margin-left: -1.1em;
+}
+
+.ficdown .eddie {
+  font-family: Courier, Monospace;
+  text-transform: uppercase;
+}
+
+
+
